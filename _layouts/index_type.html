@@ -1,0 +1,21 @@
+{% capture content %}
+		<section class="index-content">
+            <header class="page-header">
+                <h1><a href="/all">All</a><span class="quiet"> / </span>{{slug}}</h1>
+            </header>
+            <section class="index-list group">
+{% assign sectionname = {{slug}} %}
+{% for post in site.posts %}
+{% if post.meta.type.value == sectionname %}
+{% include 'layouts/index_item' %}
+{% endif %}
+{% endfor %}
+            </section>
+        </section>
+        <footer class="group">
+{% include 'includes/footer-aside-info' %}
+{% include 'includes/address' %}
+        </footer>
+{% endcapture %}
+
+{% include 'layouts/interior' %}

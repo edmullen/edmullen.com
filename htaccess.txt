@@ -1,0 +1,75 @@
+Redirect 301 /ideas/conversations-about-data /all/conversations-about-data
+
+Redirect 301 /ideas/communicating-complexity /all/communicating-complexity
+
+Redirect 301 /work/project/healthcare.gov-2.0 /all/healthcaregov
+
+Redirect 301 /work/project/healthcare-gov /all/healthcaregov 
+
+Redirect 301 /work/project/reliefweb-un-ocha /all/reliefweb-un-ocha
+
+Redirect 301 /work/project/mixtrail /all/mixtrail
+
+Redirect 301 /work/project/stone-barns-center-for-food-agriculture /all/stone-barns-center-for-food-agriculture
+
+Redirect 301 /work/project/healthyus /all/healthyus
+
+Redirect 301 /work/project/terrain /all/terrain
+
+Redirect 301 /work/project/free-people-retail /all/free-people
+
+Redirect 301 /work/project/free-people-wholesale /all/free-people#wholesale
+
+Redirect 301 /work/project/free-people-previous /all/free-people
+
+Redirect 301 /work/project/columbus-state-community-college /all/columbus-state-community-college
+
+Redirect 301 /work/project/one-world-youth-project /all/one-world-youth-project
+
+Redirect 301 /work/project/stockton-college /all/stockton-college
+
+Redirect 301 /work/project/yourpbc.org /all/yourpbcorg
+
+Redirect 301 /work/project/oberlin-college /all/oberlin
+
+Redirect 301 /work/project/jersey-city-reservoir-no-3 /all/jersey-city-reservoir-no-3
+
+Redirect 301 /work/project/terrapin-bright-green /all/terrapin-bright-green
+
+Redirect 301 /work/project/semester-in-washington-journalism /all/semester-in-washington-journalism
+
+Redirect 301 /work/project/jersey-city-landmarks-conservancy /all/jersey-city-landmarks-conservancy
+
+Redirect 301 /work/project/press-here-publicity /all/press-here-publicity
+
+Redirect 301 /work/project/u.s-committee-for-refugees-immigrants /all/us-committee-for-refugees-immigrants
+
+Redirect 301 /work/project/josh-ritter /all/josh-ritter
+
+Redirect 301 /work/project/brendan-benson /all/brendan-benson
+
+Redirect 301 /work/project/the-citizens-band /all/the-citizens-band
+
+Redirect 301 /work/project/blanche /all/blanche
+
+Redirect 301 /work/project/gosling /all/gosling
+
+Redirect 301 /work/topic/1 /all/tags/health
+
+Redirect 301 /work/topic/2 /all/tags/education
+
+Redirect 301 /work/topic/4 /all/tags/non-profit-slash-public
+
+Redirect 301 /work/topic/5 /all/tags/sustainability
+
+Redirect 301 /work/topic/3 /all/tags/complex-challenges
+
+Redirect 301 /work/topic/8 /all/tags/strategy
+
+Redirect 301 /work/topic/14 /all/tags/ia
+
+Redirect 301 /work/topic/7 /all/tags/ux
+
+Redirect 301 /work/topic/15 /all/tags/e-commerce
+
+Redirect 301 /work/topic/6 /all/tags/ui

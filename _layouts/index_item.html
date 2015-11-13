@@ -1,0 +1,11 @@
+					<section class="index-item">
+{% assign categoryname = {{post.meta['type']}} %}
+{% if categoryname == 'about' %}
+	                    <p class="category"><a href="{{post.url}}">{{post.meta['type']}}</a></p>
+{% else %}
+	                    <p class="category"><a href="/all/{{post.meta['type']}}">{{post.meta['type']}}</a></p>
+{% endif %}
+	                    <a href="{{post.url}}">{% for asset in post.assets %}{% if asset.meta.img_role.value == 'promo' %}<img src="{{asset.url}}">{% endif %}{% endfor %}</a>
+	                    <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+	                    <p>{{post.meta.subtitle}}</p>
+	                </section>

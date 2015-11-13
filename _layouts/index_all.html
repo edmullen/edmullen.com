@@ -1,0 +1,25 @@
+{% capture content %}
+		<section class="index-content">
+            <header class="page-header">
+                <h1>{{slug}}</h1>
+            </header>
+            <section class="index-list group">
+{% assign pageslug = {{slug}} %}
+{% if pageslug == 'about' %}
+{% for post in posts %}
+{% include 'layouts/index_item' %}
+{% endfor %}
+{% else %}
+{% for post in site.posts %}
+{% include 'layouts/index_item' %}
+{% endfor %}
+{% endif %}
+            </section>
+        </section>
+        <footer class="group">
+{% include 'includes/footer-aside-info' %}
+{% include 'includes/address' %}
+        </footer>
+{% endcapture %}
+
+{% include 'layouts/interior' %}

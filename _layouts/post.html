@@ -1,0 +1,66 @@
+{% capture leader %}
+{% for asset in assets %}
+{% if asset.meta.img_role.value == 'leader' %}
+{{asset.url}}
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+{% capture content %}
+
+        <div class="article-container">
+            <article class="main row stickem-container group">
+                <div class="stickem front-matter">
+                    <header>
+                        <p class="category"><a href="/all/{{meta['type']}}">{{meta['type']}}</a></p>
+                        <h1><a href="#">{{title}}</a></h1>
+                        {% if meta.subtitle %}<p class="subtitle">{{meta['subtitle']}}</p>{% endif %}
+                        <p class="date quiet">{% if meta.date_revised %}Updated: {{meta['date_revised']}} &#8226; {% endif %}Published: {{ date | date: "%b %d, %Y" }}</p>
+                        {% if meta.sections %}<nav class="section-nav">{{meta['sections'] | markdown}}</nav>{% endif %}
+                    </header>
+                </div>
+                <div class="article-body">
+                    {{body}}
+                    <p class="tag-list"><strong>Filed under:</strong>
+                        <ul class="tags">
+                            {% for tag in taxonomy['tags'] %}
+                              <li><a class="button-chicklet" href="{{tag.url}}">{{tag.value}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </p>
+                </div> <!-- .article-body end -->
+            </article>
+        </div> <!-- .article-container end -->
+
+        <footer class="group">
+            <aside class="related-content index-list group">
+                <h1>Related {{meta['related_1']}}</h1>
+                
+
+{% assign related1 = {{meta['Related Article 1 URL']}} %}
+{% for post in site.posts %}
+{% if related1 == post.url %}
+{% include 'layouts/index_item' %}
+{% endif %}
+{% endfor %}
+
+{% assign related2 = {{meta['Related Article 2 URL']}} %}
+{% for post in site.posts %}
+{% if related2 == post.url %}
+{% include 'layouts/index_item' %}
+{% endif %}
+{% endfor %}
+
+            </aside>
+{% include 'includes/address' %}
+        </footer>
+{% endcapture %}
+
+{% assign firsttag = {{taxonomy['tags'].first}} %}
+{% if firsttag == 'features' %}
+{% include 'layouts/features' %}
+{% else %}
+{% include 'layouts/interior' %}
+{% endif %}
+
+
