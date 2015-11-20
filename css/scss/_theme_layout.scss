@@ -1,9 +1,9 @@
-/* 
+/*
 
 \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 =======================================================================================
 THEME LAYOUT STYLES
-These styles establish the various styles for screen that are layout-specific. The 
+These styles establish the various styles for screen that are layout-specific. The
 default is mobile-first with two main breakpoints and two "tweakpoints" between each.
 =======================================================================================
 
@@ -13,7 +13,7 @@ default is mobile-first with two main breakpoints and two "tweakpoints" between 
 // GENERAL STYLES
 
 
-body { 
+body {
   padding: 0;
   background-position: center top;
   background-repeat: repeat-x;
@@ -50,15 +50,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, .category, nav.section-nav, figure
 }
 
 ul, ol {
-  @include responsive(medium-screens) { 
-    padding: 0 0 0 1.75em; 
+  @include responsive(medium-screens) {
+    padding: 0 0 0 1.75em;
   }
 }
 
 
 
 
-// GLOBAL HEADER 
+// GLOBAL HEADER
 
 
 .global-header {
@@ -82,7 +82,7 @@ ul, ol {
       padding-right: 0;
       width: 37.5%;
     }
-  } 
+  }
 
   .global-logo-mullen {
     display: none;
@@ -98,7 +98,7 @@ ul, ol {
     @include responsive(medium-screens) {
       display: inline;
     }
-  } 
+  }
 
   .global-nav {
 
@@ -112,9 +112,9 @@ ul, ol {
         padding-right: 1em;
       }
     }
-  }  
+  }
 
-  
+
 }   // (.global-header end)
 
 
@@ -127,9 +127,9 @@ body.template-homepage {
 }
 
 .homepage-bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: -1;
   min-width: 100%;
   min-height: 100%;
@@ -145,22 +145,22 @@ body.template-homepage {
 
 
 .homepage-feature {
-  
+
   padding: 0;
   margin: 0;
 
   header {
     background-color: $color-neutral-dark;
-    
+
     padding-top: $margin-outer-sides * 1.333;
     padding-right: $margin-outer-sides;
-    padding-bottom: $margin-outer-sides * 4.207;
+    padding-bottom: $margin-outer-sides;
     padding-left: $margin-outer-sides;
 
     @include responsive(large-screens) {
       padding-top: $margin-outer-sides-large * 1.333;
       padding-right: $margin-outer-sides-large;
-      padding-bottom: $margin-outer-sides-large * 3.157;
+      padding-bottom: $margin-outer-sides-large;
       padding-left: $margin-outer-sides-large;
     }
 
@@ -183,14 +183,61 @@ body.template-homepage {
       }
     }
   }
-  
+
+  .homepage-intro {
+
+    background-color: $color-neutral-dark;
+
+    padding-top: $margin-outer-sides * 2.369;
+    padding-right: 0;
+    padding-bottom: $margin-outer-sides * 2.369;
+    padding-left: 0;
+
+    @include responsive(small-screens-2) {
+
+      p {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+
+    @include responsive(medium-screens) {
+      padding-bottom: $margin-outer-sides * 3.157;
+
+      p {
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+    }
+
+    @include responsive(large-screens) {
+      padding-top: $margin-outer-sides-large * 1.333;
+      padding-bottom: $margin-outer-sides-large * 3.157;
+
+      p {
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+    }
+
+    @include responsive(large-screens-1) {
+
+      p {
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+    }
+
+
+  }
+
 
   h2 {
     margin-top: 0;
   }
 
   p.statement {
-    
+
     padding: 1.777em 0;
 
     @include responsive(medium-screens) {
@@ -222,9 +269,129 @@ body.template-homepage {
 }
 
 
+.homepage-experience {
+  display: block;
+  text-align: center;
+  margin-top: $margin-outer-sides * 1;
+  margin-right: $margin-outer-sides;
+  margin-bottom: 80px;
+  margin-left: $margin-outer-sides;
+  background-color: $color-accent-light-background;
+  padding-top: $margin-outer-sides * 2.369;
+
+  hr {
+    border-top-color: $color-neutral-light-darker;
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+
+  @include responsive(small-screens-2) {
+    margin-top: $margin-outer-sides * 1.777;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  @include responsive(medium-screens) {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: $margin-outer-sides * 1.777;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
+  @include responsive(large-screens) {
+    padding-top: $margin-outer-sides * 3.157;
+  }
+}
 
 
+.homepage-writing {
+  display: block;
+  background-color: $canvas-color;
+  margin-top: 160px;
 
+  padding-top: $margin-outer-sides * 2.369;
+  padding-bottom: $margin-outer-sides * 3.157;
+
+
+  @include responsive(small-screens-2) {
+
+    h3, p {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  @include responsive(medium-screens) {
+
+    h3, p {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
+  @include responsive(medium-screens-1) {
+
+    h3, p {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+
+  @include responsive(large-screens) {
+
+    h3, p {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+  }
+}
+
+
+.homepage-footer {
+  background-color: $canvas-color;
+  padding-right: $margin-outer-sides;
+  padding-left: $margin-outer-sides;
+  font-size: $base-font-size * .75;
+
+  .footer-generic-info {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: lighten($color-neutral-dark-lightest, 35%);
+    width: 100%;
+    padding-top: $margin-outer-sides;
+    padding-right: 0;
+    padding-bottom: $margin-outer-sides;
+    padding-left: 0;
+
+    p {
+      margin: 0;
+
+    }
+  }
+
+  @include responsive(small-screens-2) {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  @include responsive(medium-screens) {
+    padding-right: 15%;
+    padding-bottom: $margin-outer-sides-large;
+    padding-left: 15%;
+
+    .contact-info {
+      float: left;
+      width: 50%;
+    }
+
+    .copyright-info {
+      float: right;
+      width: 50%;
+      text-align: right;
+    }
+  }
+}
 
 // ARTICLE COMPONENTS
 
@@ -293,8 +460,8 @@ article {
       border: 1px solid $color-neutral-light;
     }
 
-    figure { 
-      @extend .block-margins; 
+    figure {
+      @extend .block-margins;
     }
 
     .tag-list {
@@ -360,9 +527,9 @@ article {
       }
     }
 
-    .flexslider-full { 
+    .flexslider-full {
     }
-  }   // (.article-body end) 
+  }   // (.article-body end)
 }   // (article end)
 
 
@@ -391,7 +558,7 @@ header.page-header {
 }
 
 .template-homepage header.page-header {
-  
+
   @include responsive(medium-screens) {
       padding-top: 2rem;
   }
@@ -468,12 +635,12 @@ header.page-header {
       &:visited {
         color: $canvas-color;
       }
-      
+
       &:hover, &:visited:hover {
         @include transition($transition-property, $transition-duration);
         background-color: $color-accent-lighter;
       }
-    }    
+    }
   }
 
   img {
@@ -514,7 +681,7 @@ footer {
   address {
     margin: 0 $margin-outer-sides;
     border-top: 1px solid $color-neutral-light-darker;
-    
+
     @include responsive(large-screens) {
       margin: 0;
       border-top: none;
@@ -570,7 +737,7 @@ footer {
 
     .index-item {
       width: 100%;
-      
+
       @include responsive(medium-screens) {
         width: 50%;
         float: left;
@@ -714,9 +881,9 @@ html[xmlns] .slides {display: block;}
 
 /* Control Nav */
 .flex-control-nav {
-  width: 100%; 
+  width: 100%;
   position: absolute;
-  bottom: -40px; 
+  bottom: -40px;
   text-align: center;
 
   @include responsive(large-screens) {
@@ -738,6 +905,3 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
-
-
-

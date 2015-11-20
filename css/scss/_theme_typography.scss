@@ -1,13 +1,13 @@
-/* 
+/*
 
 \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 =======================================================================================
 THEME TYPOGRAPHIC STYLES
-These styles set up all the base typographic and branding styles without establishing 
-layout-specific aspects. This file does not affect the layout of the site. When this 
-file is removed, typographic styles revert to the baseline styles and styles 
+These styles set up all the base typographic and branding styles without establishing
+layout-specific aspects. This file does not affect the layout of the site. When this
+file is removed, typographic styles revert to the baseline styles and styles
 established with variables.
-======================================================================================= 
+=======================================================================================
 
 */
 
@@ -26,11 +26,11 @@ h1 {
 
   @include responsive(large-screens-2) {
     font-size: 5.61rem;
-  } 
+  }
 }
 
 h2 {
-  letter-spacing: 0px; 
+  letter-spacing: 0px;
   margin-top: 0;
   line-height: 1;
 }
@@ -69,7 +69,7 @@ hr {
 }
 
 .accent-font {
-  font-family: $accent-font-family; 
+  font-family: $accent-font-family;
   font-weight: $accent-font-weight;
 }
 
@@ -117,18 +117,18 @@ hr {
   line-height: 2.5rem;
 
   .global-logo {
-    font-family: $accent-font-family; 
+    font-family: $accent-font-family;
     letter-spacing: 1px;
 
     a {
       .global-logo-name {
         font-weight: 600;
         color: $color-neutral-light-lightest;
-        
+
         &:visited {
           color: $color-neutral-light-lightest;
         }
-        
+
         &:hover, &:visited:hover {
           color: $color-accent-lighter;
         }
@@ -152,11 +152,11 @@ hr {
     a {
       color: $color-accent;
       text-decoration: none;
-      
+
       &:visited {
         color: $color-accent;
       }
-      
+
       &:hover, &:visited:hover {
         color: $color-accent-lighter;
       }
@@ -169,7 +169,7 @@ hr {
   color: $color-neutral-dark-lighter;
 
   header {
-     
+
     @extend .accent-font;
 
     .homepage-logo {
@@ -182,7 +182,7 @@ hr {
         letter-spacing: 0px;
       }
 
-      
+
     }
   }
 
@@ -199,7 +199,7 @@ hr {
     @extend .accent-font;
 
     @include responsive(large-screens) {
-      font-size: 1.777rem;
+      font-size:  $base-font-size * 1.777;
     }
 
     a {
@@ -217,7 +217,7 @@ hr {
   }   // (p.statement ends)
 
   nav {
-    
+
     @extend .text-center;
 
     a.feature-nav-item {
@@ -234,14 +234,132 @@ hr {
       &:visited {
         color: $canvas-color;
       }
-      
+
       &:hover, &:visited:hover {
         @include transition($transition-property, $transition-duration);
         background-color: $color-accent-lighter;
       }
     }   // (a.feature-nav-item ends)
   }   // (nav ends)
+
 }   // (.homepage-feature ends)
+
+
+.homepage-intro {
+  color: $canvas-color;
+  font-family: $accent-font-family;
+
+  @include responsive(large-screens) {
+    font-size: $base-font-size * 1.333;
+  }
+}
+
+a.circle-button {
+  @extend .text-center;
+  @extend .accent-font;
+  background-color: $color-accent;
+  display: block;
+  height: 160px;
+  width: 160px;
+  position: relative;
+  margin: auto;
+  line-height: $base-font-line-height * .75;
+  color: $canvas-color;
+  padding-top: 60px;
+  @include rounded(80px);
+
+  &:visited {
+    color: $canvas-color;
+  }
+
+  &:hover, &:visited:hover {
+    @include transition($transition-property, $transition-duration);
+    background-color: $color-accent-lighter;
+  }
+}   // (a.circle-button ends)
+
+
+.homepage-experience {
+
+  h2 {
+    text-align: center;
+    font-size: $base-font-size;
+    font-family: $accent-font-family;
+    font-weight: $accent-font-weight;
+    color: $color-neutral-dark-lightest;
+    margin-bottom: $margin-outer-sides * 1.777;
+  }
+
+  h3 {
+    margin-top: $base-font-size * 2.369;
+    margin-bottom: 0;
+  }
+
+  .timeframe {
+    font-size: $base-font-size * .75;
+  }
+
+  @include responsive(large-screens) {
+
+    h2 {
+      margin-bottom: $margin-outer-sides * 2.369;
+    }
+  }
+
+  a.circle-button {
+    top: 80px;
+    margin: -70px auto 0 auto;
+  }   // (a.circle-button ends)
+
+
+}
+
+
+.homepage-writing {
+
+  h2 {
+    text-align: center;
+    font-size: $base-font-size;
+    font-family: $accent-font-family;
+    color: $color-neutral-dark-lightest;
+    font-weight: $accent-font-weight;
+    padding-top: $margin-outer-sides * 1;
+    padding-bottom: $margin-outer-sides * 1.333;
+  }
+
+  h3 {
+    font-size: $base-font-size * 1.777;
+    font-family: "league-gothic",sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  a.circle-button {
+    margin: 60px auto 0 auto;
+    background-color: $canvas-color;
+    border: 2px solid $color-accent;
+    color: $color-accent;
+
+    &:visited {
+      color: $color-accent;
+    }
+
+    &:hover, &:visited:hover {
+      @include transition($transition-property, $transition-duration);
+      background-color: $color-accent-lighter;
+      border: 2px solid $color-accent-lighter;
+      color: $canvas-color;
+    }
+  }   // (a.circle-button ends)
+
+  @include responsive(medium-screens) {
+
+    h3 {
+      font-size: $base-font-size * 2.369;
+    }
+  }
+
+}
 
 
 .homepage-icons {
@@ -255,7 +373,7 @@ hr {
       @include transition($transition-property, $transition-duration);
       fill: $color-neutral-dark-lighter;
     }
-    
+
     &:hover, &:visited:hover {
       @include transition($transition-property, $transition-duration);
       fill: $color-accent-lighter;
@@ -347,11 +465,11 @@ article.main {
 
     a {
       color: $color-neutral-dark;
-      
+
       &:visited {
         color: $color-neutral-dark-lighter;
       }
-      
+
       &:hover, &:visited:hover {
         color: $color-accent;
       }
