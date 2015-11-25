@@ -229,7 +229,7 @@ UTILITIES
 // Breakpoint Indicator
 
 .bp-indicator {
-  display: none; /* To show set to block. */
+  display: block; /* To hide set to none. */
   color: $color-neutral-dark;
   background-color: $canvas-color;
   position: fixed;

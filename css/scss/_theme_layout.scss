@@ -145,28 +145,25 @@ body.template-homepage {
 
 
 .homepage-feature {
-
+  background-color: $color-neutral-dark;
   padding: 0;
   margin: 0;
 
   header {
-    background-color: $color-neutral-dark;
 
+    margin-right: $margin-outer-sides;
+    margin-left: $margin-outer-sides;
     padding-top: $margin-outer-sides * 1.333;
-    padding-right: $margin-outer-sides;
-    padding-bottom: $margin-outer-sides;
-    padding-left: $margin-outer-sides;
+    padding-bottom: $margin-outer-sides * .75;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: darken($color-neutral-dark-lighter, 10%);
 
-    @include responsive(large-screens) {
-      padding-top: $margin-outer-sides-large * 1.333;
-      padding-right: $margin-outer-sides-large;
-      padding-bottom: $margin-outer-sides-large;
-      padding-left: $margin-outer-sides-large;
-    }
 
     .homepage-logo {
       padding-right: 0;
-      padding-bottom: 0;
+      padding-bottom: $margin-outer-sides * 1.777;
+      display: block;
 
       h1 {
         margin: 0;
@@ -177,10 +174,27 @@ body.template-homepage {
         margin: 0;
         padding: 0;
       }
+    }// end .homepage-logo
 
-      @include responsive(medium-screens) {
+    @include responsive(small-screens-2) {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    @include responsive(medium-screens) {
+      padding-top: $margin-outer-sides * 1.333;
+      margin-right: 15%;
+      margin-left: 15%;
+
+      .homepage-logo {
         float: left;
+        padding-bottom: 0;
       }
+    }
+
+    @include responsive(large-screens) {
+      padding-top: $margin-outer-sides-large * 1.333;
+      padding-bottom: $margin-outer-sides-large;
     }
   }
 
@@ -211,7 +225,7 @@ body.template-homepage {
     }
 
     @include responsive(large-screens) {
-      padding-top: $margin-outer-sides-large * 1.333;
+      padding-top: $margin-outer-sides-large * 2.369;
       padding-bottom: $margin-outer-sides-large * 3.157;
 
       p {

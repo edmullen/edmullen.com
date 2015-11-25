@@ -178,11 +178,24 @@ hr {
         @extend .accent-font;
         font-weight: 700;
         color: $canvas-color;
-        font-size: 1.777em;
-        letter-spacing: 0px;
+        font-size: $base-font-size * 1.333;
+        letter-spacing: 0px
       }
 
+      .tagline {
+        font-size: $base-font-size * .75;
+      }
 
+      @include responsive(large-screens) {
+
+        h1 {
+          font-size: $base-font-size * 1.777;
+        }
+
+        .tagline {
+          font-size: $base-font-size;
+        }
+      }
     }
   }
 
@@ -288,6 +301,14 @@ a.circle-button {
     font-weight: $accent-font-weight;
     color: $color-neutral-dark-lightest;
     margin-bottom: $margin-outer-sides * 1.777;
+
+    a, a:visited, a:active {
+      color: $color-neutral-dark-lightest;
+    }
+
+    a:hover {
+      color: $color-accent;
+    }
   }
 
   h3 {
@@ -325,6 +346,14 @@ a.circle-button {
     font-weight: $accent-font-weight;
     padding-top: $margin-outer-sides * 1;
     padding-bottom: $margin-outer-sides * 1.333;
+
+    a, a:visited, a:active {
+      color: $color-neutral-dark-lightest;
+    }
+
+    a:hover {
+      color: $color-accent;
+    }
   }
 
   h3 {
