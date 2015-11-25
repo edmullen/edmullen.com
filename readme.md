@@ -8,6 +8,7 @@ This is the personal website of Ed Mullen.
 * **Uses SCSS** - Run *Scout* to compile to CSS
   * Scout should be configured to output CSS in *CSS* directory
 * **Siteleaf is the CMS** - View local server using Siteleaf.com content at edmullen.dev
+  * Local server based on Pow viewable at edmullen.dev - Takes a few minutes to start running after a restart.
   * If stopped, in terminal: try running "siteleaf config edmullen.com" inside *edmullen* directory
 * **To push theme** - In terminal: *siteleaf push theme*
 * **To publish** - In terminal: *siteleaf publish*
