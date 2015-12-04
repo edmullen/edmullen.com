@@ -196,7 +196,7 @@ body.template-homepage {
       padding-top: $margin-outer-sides-large * 1.333;
       padding-bottom: $margin-outer-sides-large;
     }
-  }
+  } // end header
 
   .homepage-intro {
 
@@ -204,8 +204,9 @@ body.template-homepage {
 
     padding-top: $margin-outer-sides * 2.369;
     padding-right: 0;
-    padding-bottom: $margin-outer-sides * 2.369;
+    padding-bottom: $margin-outer-sides * 0;//2.369
     padding-left: 0;
+    margin-bottom: 170px;
 
     @include responsive(small-screens-2) {
 
@@ -216,7 +217,7 @@ body.template-homepage {
     }
 
     @include responsive(medium-screens) {
-      padding-bottom: $margin-outer-sides * 3.157;
+      padding-bottom: $margin-outer-sides * 0;//3.157
 
       p {
         margin-left: 15%;
@@ -226,7 +227,8 @@ body.template-homepage {
 
     @include responsive(large-screens) {
       padding-top: $margin-outer-sides-large * 2.369;
-      padding-bottom: $margin-outer-sides-large * 3.157;
+      padding-bottom: $margin-outer-sides-large * 0;//3.157
+
 
       p {
         margin-left: 15%;
@@ -242,8 +244,18 @@ body.template-homepage {
       }
     }
 
+    img.profilepic {
+      width: 240px;
+      height: 240px;
+      @include rounded(120px);
+      margin: -120px auto auto auto;
+      display: block;
+      position: relative;
+      top: 120px;
+    }
+  } //end .homepage-intro
 
-  }
+
 
 
   h2 {
@@ -280,13 +292,13 @@ body.template-homepage {
       margin-left: 20%;
     }
   }
-}
+} // end .homepage-feature
 
 
 .homepage-experience {
   display: block;
   text-align: center;
-  margin-top: $margin-outer-sides * 1;
+  margin-top: $margin-outer-sides * 2.369;
   margin-right: $margin-outer-sides;
   margin-bottom: 80px;
   margin-left: $margin-outer-sides;
