@@ -671,10 +671,10 @@ UTILITIES
 =======================================================================================
 
 */
-/* line 231, scss/_baseline.scss */
+/* line 232, scss/_baseline.scss */
 .bp-indicator {
-  display: block;
-  /* To hide set to none. */
+  display: none;
+  /* To show set to block. */
   color: #363d45;
   background-color: white;
   position: fixed;
@@ -682,100 +682,100 @@ UTILITIES
   right: 0;
 }
 
-/* line 240, scss/_baseline.scss */
+/* line 241, scss/_baseline.scss */
 .bp-item {
   padding: .5rem 1rem;
 }
 
-/* line 244, scss/_baseline.scss */
+/* line 245, scss/_baseline.scss */
 .bp-small-1, .bp-small-2, .bp-medium, .bp-medium-1, .bp-medium-2, .bp-large, .bp-large-1, .bp-large-2 {
   display: none;
 }
 
 @media only screen and (min-width: 27em) {
-  /* line 249, scss/_baseline.scss */
+  /* line 250, scss/_baseline.scss */
   .bp-small {
     display: none;
   }
 
-  /* line 250, scss/_baseline.scss */
+  /* line 251, scss/_baseline.scss */
   .bp-small-1 {
     display: inline;
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 254, scss/_baseline.scss */
+  /* line 255, scss/_baseline.scss */
   .bp-small-1 {
     display: none;
   }
 
-  /* line 255, scss/_baseline.scss */
+  /* line 256, scss/_baseline.scss */
   .bp-small-2 {
     display: inline;
   }
 }
 @media only screen and (min-width: 35em) {
-  /* line 259, scss/_baseline.scss */
+  /* line 260, scss/_baseline.scss */
   .bp-small-2 {
     display: none;
   }
 
-  /* line 260, scss/_baseline.scss */
+  /* line 261, scss/_baseline.scss */
   .bp-medium {
     display: inline;
   }
 }
 @media only screen and (min-width: 47em) {
-  /* line 264, scss/_baseline.scss */
+  /* line 265, scss/_baseline.scss */
   .bp-medium {
     display: none;
   }
 
-  /* line 265, scss/_baseline.scss */
+  /* line 266, scss/_baseline.scss */
   .bp-medium-1 {
     display: inline;
   }
 }
 @media only screen and (min-width: 51em) {
-  /* line 269, scss/_baseline.scss */
+  /* line 270, scss/_baseline.scss */
   .bp-medium-1 {
     display: none;
   }
 
-  /* line 270, scss/_baseline.scss */
+  /* line 271, scss/_baseline.scss */
   .bp-medium-2 {
     display: inline;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 274, scss/_baseline.scss */
+  /* line 275, scss/_baseline.scss */
   .bp-medium-2 {
     display: none;
   }
 
-  /* line 275, scss/_baseline.scss */
+  /* line 276, scss/_baseline.scss */
   .bp-large {
     display: inline;
   }
 }
 @media only screen and (min-width: 75em) {
-  /* line 279, scss/_baseline.scss */
+  /* line 280, scss/_baseline.scss */
   .bp-large {
     display: none;
   }
 
-  /* line 280, scss/_baseline.scss */
+  /* line 281, scss/_baseline.scss */
   .bp-large-1 {
     display: inline;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 284, scss/_baseline.scss */
+  /* line 285, scss/_baseline.scss */
   .bp-large-1 {
     display: none;
   }
 
-  /* line 285, scss/_baseline.scss */
+  /* line 286, scss/_baseline.scss */
   .bp-large-2 {
     display: inline;
   }
