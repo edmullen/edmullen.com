@@ -314,6 +314,14 @@ a.circle-button {
   h3 {
     margin-top: $base-font-size * 2.369;
     margin-bottom: 0;
+
+    a, a:visited, a:active {
+      color: $color-neutral-dark;
+    }
+
+    a:hover {
+      color: $color-accent;
+    }
   }
 
   .timeframe {

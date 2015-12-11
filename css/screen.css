@@ -1107,23 +1107,31 @@ a.circle-button:hover, a.circle-button:visited:hover {
   margin-top: 42.642px;
   margin-bottom: 0;
 }
-/* line 319, scss/_theme_typography.scss */
+/* line 318, scss/_theme_typography.scss */
+.homepage-experience h3 a, .homepage-experience h3 a:visited, .homepage-experience h3 a:active {
+  color: #363d45;
+}
+/* line 322, scss/_theme_typography.scss */
+.homepage-experience h3 a:hover {
+  color: #dc685d;
+}
+/* line 327, scss/_theme_typography.scss */
 .homepage-experience .timeframe {
   font-size: 13.5px;
 }
 @media only screen and (min-width: 60em) {
-  /* line 325, scss/_theme_typography.scss */
+  /* line 333, scss/_theme_typography.scss */
   .homepage-experience h2 {
     margin-bottom: 2.96125rem;
   }
 }
-/* line 330, scss/_theme_typography.scss */
+/* line 338, scss/_theme_typography.scss */
 .homepage-experience a.circle-button {
   top: 80px;
   margin: -70px auto 0 auto;
 }
 
-/* line 341, scss/_theme_typography.scss */
+/* line 349, scss/_theme_typography.scss */
 .homepage-writing h2 {
   text-align: center;
   font-size: 18px;
@@ -1133,33 +1141,33 @@ a.circle-button:hover, a.circle-button:visited:hover {
   padding-top: 1.25rem;
   padding-bottom: 1.66625rem;
 }
-/* line 350, scss/_theme_typography.scss */
+/* line 358, scss/_theme_typography.scss */
 .homepage-writing h2 a, .homepage-writing h2 a:visited, .homepage-writing h2 a:active {
   color: #828d9d;
 }
-/* line 354, scss/_theme_typography.scss */
+/* line 362, scss/_theme_typography.scss */
 .homepage-writing h2 a:hover {
   color: #dc685d;
 }
-/* line 359, scss/_theme_typography.scss */
+/* line 367, scss/_theme_typography.scss */
 .homepage-writing h3 {
   font-size: 31.986px;
   font-family: "league-gothic",sans-serif;
   font-weight: 400;
   margin-bottom: 0;
 }
-/* line 366, scss/_theme_typography.scss */
+/* line 374, scss/_theme_typography.scss */
 .homepage-writing a.circle-button {
   margin: 60px auto 0 auto;
   background-color: white;
   border: 2px solid #dc685d;
   color: #dc685d;
 }
-/* line 372, scss/_theme_typography.scss */
+/* line 380, scss/_theme_typography.scss */
 .homepage-writing a.circle-button:visited {
   color: #dc685d;
 }
-/* line 376, scss/_theme_typography.scss */
+/* line 384, scss/_theme_typography.scss */
 .homepage-writing a.circle-button:hover, .homepage-writing a.circle-button:visited:hover {
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1170,17 +1178,17 @@ a.circle-button:hover, a.circle-button:visited:hover {
   color: white;
 }
 @media only screen and (min-width: 35em) {
-  /* line 386, scss/_theme_typography.scss */
+  /* line 394, scss/_theme_typography.scss */
   .homepage-writing h3 {
     font-size: 42.642px;
   }
 }
 
-/* line 394, scss/_theme_typography.scss */
+/* line 402, scss/_theme_typography.scss */
 .homepage-icons {
   fill: white;
 }
-/* line 397, scss/_theme_typography.scss */
+/* line 405, scss/_theme_typography.scss */
 .homepage-icons a {
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1188,7 +1196,7 @@ a.circle-button:hover, a.circle-button:visited:hover {
   transition: all 0.25s ease;
   fill: #687384;
 }
-/* line 401, scss/_theme_typography.scss */
+/* line 409, scss/_theme_typography.scss */
 .homepage-icons a:visited {
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1196,7 +1204,7 @@ a.circle-button:hover, a.circle-button:visited:hover {
   transition: all 0.25s ease;
   fill: #687384;
 }
-/* line 406, scss/_theme_typography.scss */
+/* line 414, scss/_theme_typography.scss */
 .homepage-icons a:hover, .homepage-icons a:visited:hover {
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1205,16 +1213,16 @@ a.circle-button:hover, a.circle-button:visited:hover {
   fill: #e58f87;
 }
 @media only screen and (min-width: 35em) {
-  /* line 394, scss/_theme_typography.scss */
+  /* line 402, scss/_theme_typography.scss */
   .homepage-icons {
     float: right;
   }
-  /* line 415, scss/_theme_typography.scss */
+  /* line 423, scss/_theme_typography.scss */
   .homepage-icons .social-media-icons-phone {
     display: none;
   }
 }
-/* line 420, scss/_theme_typography.scss */
+/* line 428, scss/_theme_typography.scss */
 .homepage-icons svg {
   width: 1.5em;
   height: 1.5em;
@@ -1222,7 +1230,7 @@ a.circle-button:hover, a.circle-button:visited:hover {
   margin-right: .75em;
 }
 @media only screen and (min-width: 35em) {
-  /* line 420, scss/_theme_typography.scss */
+  /* line 428, scss/_theme_typography.scss */
   .homepage-icons svg {
     width: 1.75em;
     height: 1.75em;
@@ -1232,48 +1240,48 @@ a.circle-button:hover, a.circle-button:visited:hover {
   }
 }
 
-/* line 438, scss/_theme_typography.scss */
+/* line 446, scss/_theme_typography.scss */
 article.main h1 a {
   color: #363d45;
 }
-/* line 441, scss/_theme_typography.scss */
+/* line 449, scss/_theme_typography.scss */
 article.main h1 a:visited {
   color: #363d45;
 }
-/* line 445, scss/_theme_typography.scss */
+/* line 453, scss/_theme_typography.scss */
 article.main h1 a:hover, article.main h1 a:visited:hover {
   color: #dc685d;
 }
-/* line 450, scss/_theme_typography.scss */
+/* line 458, scss/_theme_typography.scss */
 article.main h2 {
   padding-top: 3.125rem;
 }
-/* line 454, scss/_theme_typography.scss */
+/* line 462, scss/_theme_typography.scss */
 article.main h3 {
   padding-top: .5em;
 }
 
-/* line 461, scss/_theme_typography.scss */
+/* line 469, scss/_theme_typography.scss */
 .page-header h1 {
   text-transform: uppercase;
   font-size: 1.777rem;
   letter-spacing: 0px;
 }
 @media only screen and (min-width: 35em) {
-  /* line 461, scss/_theme_typography.scss */
+  /* line 469, scss/_theme_typography.scss */
   .page-header h1 {
     font-size: 2.369rem;
   }
 }
-/* line 471, scss/_theme_typography.scss */
+/* line 479, scss/_theme_typography.scss */
 .page-header a:visited {
   color: #dc685d;
 }
-/* line 475, scss/_theme_typography.scss */
+/* line 483, scss/_theme_typography.scss */
 .page-header a:hover, .page-header:visited:hover {
   color: #e58f87;
 }
-/* line 479, scss/_theme_typography.scss */
+/* line 487, scss/_theme_typography.scss */
 .page-header .page-header-secondary {
   text-transform: capitalize;
   margin-right: .5em;
@@ -1281,44 +1289,44 @@ article.main h3 {
   float: right;
 }
 
-/* line 490, scss/_theme_typography.scss */
+/* line 498, scss/_theme_typography.scss */
 .index-item h2 {
   font-size: 1.777rem;
   margin-top: .5rem;
   margin-bottom: 0;
 }
-/* line 495, scss/_theme_typography.scss */
+/* line 503, scss/_theme_typography.scss */
 .index-item h2 a {
   color: #363d45;
 }
-/* line 498, scss/_theme_typography.scss */
+/* line 506, scss/_theme_typography.scss */
 .index-item h2 a:visited {
   color: #687384;
 }
-/* line 502, scss/_theme_typography.scss */
+/* line 510, scss/_theme_typography.scss */
 .index-item h2 a:hover, .index-item h2 a:visited:hover {
   color: #dc685d;
 }
-/* line 508, scss/_theme_typography.scss */
+/* line 516, scss/_theme_typography.scss */
 .index-item p {
   color: #687384;
   margin-top: .25em;
   margin-bottom: .375em;
 }
 
-/* line 515, scss/_theme_typography.scss */
+/* line 523, scss/_theme_typography.scss */
 ul.tags {
   list-style: none;
   margin: 0;
   padding: 0 1.25rem;
 }
 @media only screen and (min-width: 35em) {
-  /* line 515, scss/_theme_typography.scss */
+  /* line 523, scss/_theme_typography.scss */
   ul.tags {
     padding: 0;
   }
 }
-/* line 524, scss/_theme_typography.scss */
+/* line 532, scss/_theme_typography.scss */
 ul.tags li {
   display: inline;
   float: left;
@@ -1326,29 +1334,29 @@ ul.tags li {
   padding: 0;
 }
 
-/* line 533, scss/_theme_typography.scss */
+/* line 541, scss/_theme_typography.scss */
 footer {
   background-color: #e1d8d8;
   margin-top: 0;
   padding-top: 2.22125rem;
 }
-/* line 538, scss/_theme_typography.scss */
+/* line 546, scss/_theme_typography.scss */
 footer address {
   margin: 2em 0;
 }
-/* line 541, scss/_theme_typography.scss */
+/* line 549, scss/_theme_typography.scss */
 footer address p {
   color: #9e8282;
 }
-/* line 544, scss/_theme_typography.scss */
+/* line 552, scss/_theme_typography.scss */
 footer address p.copyright-info {
   font-size: 75%;
 }
-/* line 550, scss/_theme_typography.scss */
+/* line 558, scss/_theme_typography.scss */
 footer address p.contact-info .company-name {
   font-weight: 700;
 }
-/* line 559, scss/_theme_typography.scss */
+/* line 567, scss/_theme_typography.scss */
 footer aside h1 {
   font-size: 2.369rem;
   margin-bottom: 1.333rem;
